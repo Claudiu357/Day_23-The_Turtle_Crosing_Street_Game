@@ -14,7 +14,7 @@ class CarManager(Turtle):
         self.hideturtle()
         self.all_cars = []
         self.Y_POS = []
-        for _ in range(-280, 281, 20):
+        for _ in range(-220, 231, 20):
             self.Y_POS.append(_)
 
     def add_car(self):
