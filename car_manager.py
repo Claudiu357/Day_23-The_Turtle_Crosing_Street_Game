@@ -18,15 +18,15 @@ class CarManager(Turtle):
             self.Y_POS.append(_)
 
     def add_car(self):
-        t = Turtle()
-        t.shape("square")
-        t.penup()
-        t.shapesize(stretch_len=2, stretch_wid=1)
-        t.color(random.choice(COLORS))
-        t.setheading(180)
+        car = Turtle()
+        car.shape("square")
+        car.penup()
+        car.shapesize(stretch_len=2, stretch_wid=1)
+        car.color(random.choice(COLORS))
+        car.setheading(180)
         random_y = random.choice(self.Y_POS)
-        t.goto(x=300, y=random_y)
-        self.all_cars.append(t)
+        car.goto(x=300, y=random_y)
+        self.all_cars.append(car)
 
     def move_cars(self):
         if random.choice(CHANCE) == 1:
